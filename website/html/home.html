@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>heAlth — Mental Wellbeing, Made Reachable</title>
+<meta name="description" content="heAlth connects students and people everywhere with licensed therapists for anxiety, depression, stress and more." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="/website/html/home.html" class="logo">
+      <span class="logo-mark">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="14" fill="#8FA998" opacity="0.5"/>
+          <path d="M9 16c0-4 2.7-7 6-7s6 3 6 7-2.7 7-6 7-6-3-6-7Z" stroke="#2D4F4A" stroke-width="1.6" fill="none"/>
+          <path d="M11 15.5c1 1.4 2.2 2 4 2s3-0.6 4-2" stroke="#E8927C" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        </svg>
+      </span>he<span class="cap-a">A</span>lth
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/website/html/home.html" class="active">Home</a></li>
+        <li><a href="/website/html/therapist.html">List of Therapists</a></li>
+        <li><a href="/website/html/about.html">About Us</a></li>
+        <li><a href="#find-therapist" class="nav-cta"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M19.5 19.5l-4.2-4.2"/></svg>Find My Therapist</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO + SLIDER -->
+  <section class="hero">
+    <div class="breathing-orb" style="width:380px;height:380px;top:-120px;right:-140px;"></div>
+    <div class="breathing-orb" style="width:220px;height:220px;bottom:-80px;left:-100px;animation-delay:2s;"></div>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="eyebrow">You don't have to carry it alone</span>
+        <h1>A calmer mind starts with <em>one conversation.</em></h1>
+        <p>heAlth connects students, professionals, and anyone going through a hard time with licensed therapists who actually get it — anxiety, depression, burnout, and everything in between.</p>
+        <div class="hero-stats">
+          <div><strong>120+</strong><span>Verified therapists</span></div>
+          <div><strong>15k+</strong><span>Sessions held</span></div>
+          <div><strong>4.8/5</strong><span>Average client rating</span></div>
+        </div>
+      </div>
+
+      <div class="slider">
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80" alt="A calm therapy session between two people talking on a sofa" />
+          <div class="slide-caption">
+            <span class="tag">Real conversations</span>
+            <h3>Talk it through with someone who listens</h3>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1551892374-ecf8754cf8b0?auto=format&fit=crop&w=900&q=80" alt="A student studying calmly with notes and a warm cup of tea" />
+          <div class="slide-caption">
+            <span class="tag">For students</span>
+            <h3>Support that fits around exams & deadlines</h3>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1517021897933-0e0319cfbc28?auto=format&fit=crop&w=900&q=80" alt="A peaceful nature scene representing calm and mental clarity" />
+          <div class="slide-caption">
+            <span class="tag">Anywhere, anytime</span>
+            <h3>Online sessions that meet you where you are</h3>
+          </div>
+        </div>
+        <button class="slider-arrow prev" aria-label="Previous slide">&#8249;</button>
+        <button class="slider-arrow next" aria-label="Next slide">&#8250;</button>
+        <div class="slider-dots">
+          <button class="dot active" aria-label="Slide 1"></button>
+          <button class="dot" aria-label="Slide 2"></button>
+          <button class="dot" aria-label="Slide 3"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEARCH / TELL US YOUR PROBLEM -->
+  <section class="search-section" id="find-therapist">
+    <div class="container">
+      <div class="search-card">
+        <h2>Tell us what's on your mind</h2>
+        <p>Describe how you're feeling, and we'll point you to therapists who can help.</p>
+        <form class="search-form">
+          <input type="text" placeholder="e.g. I've been feeling anxious about exams lately…" aria-label="Describe your problem" />
+          <button type="submit">Find Help</button>
+        </form>
+        <div class="search-tags">
+          <button type="button">Anxiety</button>
+          <button type="button">Depression</button>
+          <button type="button">Academic stress</button>
+          <button type="button">Sleep issues</button>
+          <button type="button">Relationship problems</button>
+        </div>
+        <p class="search-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY heAlth -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why heAlth</span>
+        <h2>Care that's easy to start, and easy to trust</h2>
+        <p>We built heAlth to remove every barrier between feeling overwhelmed and getting real support.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🌱</div>
+          <h3>Licensed, vetted therapists</h3>
+          <p>Every therapist on heAlth is verified and experienced in helping with anxiety, depression, stress, and more.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3>Match in minutes</h3>
+          <p>Tell us a little about your situation and we'll point you toward therapists best suited to help.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🔒</div>
+          <h3>Private & judgement-free</h3>
+          <p>Your conversations stay confidential. This is a safe space to be honest about how you're really doing.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>Built with students in mind</h3>
+          <p>Flexible scheduling around classes and exams, with therapists who understand academic pressure.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Online sessions</h3>
+          <p>Talk to your therapist from your phone or laptop, wherever you feel most comfortable.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💚</div>
+          <h3>Affordable plans</h3>
+          <p>Mental health support shouldn't be out of reach — we keep pricing transparent and flexible.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>Ready to feel a little lighter?</h2>
+          <p>Browse our therapists and book your first session today.</p>
+        </div>
+        <a href="therapists.html"><button class="btn-coral">View Therapists</button></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">he<span class="cap-a">A</span>lth</a>
+        <p>A safe, supportive space for students and people everywhere to face mental health challenges and come out stronger.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="therapists.html">List of Therapists</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="about.html">Client Reviews</a></li>
+          <li><a href="therapists.html">Book a Session</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><span class="ic">📞</span><span>989728278 / 9823728382</span></li>
+          <li><span class="ic">✉️</span><span>xyz@gmail.com</span></li>
+          <li><span class="ic">📍</span><span>14 Willowbrook Lane, Lakeview District, Kathmandu</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 heAlth. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast"></div>
+<script src="/website/javascript/style.js"></script>
+</body>
+</html>

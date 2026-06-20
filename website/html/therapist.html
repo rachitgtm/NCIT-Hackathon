@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>List of Therapists — heAlth</title>
+<meta name="description" content="Browse licensed therapists on heAlth and book a session that fits your needs." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/website/css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+      <span class="logo-mark">
+        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="15" cy="15" r="14" fill="#8FA998" opacity="0.5"/>
+          <path d="M9 16c0-4 2.7-7 6-7s6 3 6 7-2.7 7-6 7-6-3-6-7Z" stroke="#2D4F4A" stroke-width="1.6" fill="none"/>
+          <path d="M11 15.5c1 1.4 2.2 2 4 2s3-0.6 4-2" stroke="#E8927C" stroke-width="1.6" stroke-linecap="round" fill="none"/>
+        </svg>
+      </span>he<span class="cap-a">A</span>lth
+    </a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/website/html/home.html">Home</a></li>
+        <li><a href="/website/html/therapist.html" class="active">List of Therapists</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="#therapist-grid" class="nav-cta">Find My Therapist</a></li>
+      </ul>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="breathing-orb" style="width:300px;height:300px;top:-100px;left:-120px;"></div>
+    <div class="container">
+      <span class="eyebrow">Meet our team</span>
+      <h1>Therapists who meet you where you are</h1>
+      <p>Every therapist below is licensed and experienced. Filter by what you're going through, and book a session whenever you're ready.</p>
+
+      <div class="filter-bar">
+        <button class="active" data-filter="all">All</button>
+        <button data-filter="anxiety">Anxiety</button>
+        <button data-filter="depression">Depression</button>
+        <button data-filter="stress">Stress &amp; Burnout</button>
+        <button data-filter="students">Student Support</button>
+        <button data-filter="relationship">Relationships</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container" id="therapist-grid">
+    <div class="therapist-grid">
+
+      <article class="therapist-card" data-tags="anxiety depression students">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Anjali Sharma" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Anjali Sharma</h3>
+            <span class="therapist-rating">★ 4.9</span>
+          </div>
+          <span class="therapist-spec">Anxiety &amp; Student Counselling</span>
+          <p class="desc">12 years helping students manage exam stress, panic, and overthinking with calm, practical strategies.</p>
+          <div class="therapist-meta"><span>🕓 45 min</span><span>💻 Online</span><span>🗣️ English, Nepali</span></div>
+          <button class="book-btn" data-name="Dr. Anjali Sharma">Book a Session</button>
+        </div>
+      </article>
+
+      <article class="therapist-card" data-tags="depression stress">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Marcus Lee" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Marcus Lee</h3>
+            <span class="therapist-rating">★ 4.8</span>
+          </div>
+          <span class="therapist-spec">Depression &amp; Burnout</span>
+          <p class="desc">Specializes in CBT-based approaches for low mood, fatigue, and loss of motivation in young professionals.</p>
+          <div class="therapist-meta"><span>🕓 50 min</span><span>💻 Online</span><span>🗣️ English</span></div>
+          <button class="book-btn" data-name="Dr. Marcus Lee">Book a Session</button>
+        </div>
+      </article>
+
+      <article class="therapist-card" data-tags="relationship stress">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Priya Nair" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Priya Nair</h3>
+            <span class="therapist-rating">★ 4.9</span>
+          </div>
+          <span class="therapist-spec">Relationship &amp; Family Counselling</span>
+          <p class="desc">Helps individuals and couples work through conflict, trust, and communication in a warm, structured way.</p>
+          <div class="therapist-meta"><span>🕓 60 min</span><span>💻 Online</span><span>🗣️ English, Hindi</span></div>
+          <button class="book-btn" data-name="Dr. Priya Nair">Book a Session</button>
+        </div>
+      </article>
+
+      <article class="therapist-card" data-tags="anxiety stress students">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Samuel Osei" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Samuel Osei</h3>
+            <span class="therapist-rating">★ 4.7</span>
+          </div>
+          <span class="therapist-spec">Stress Management</span>
+          <p class="desc">Works with students and early-career professionals to build sustainable habits around stress and overwhelm.</p>
+          <div class="therapist-meta"><span>🕓 45 min</span><span>💻 Online</span><span>🗣️ English</span></div>
+          <button class="book-btn" data-name="Dr. Samuel Osei">Book a Session</button>
+        </div>
+      </article>
+
+      <article class="therapist-card" data-tags="depression anxiety">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Elena Garcia" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Elena Garcia</h3>
+            <span class="therapist-rating">★ 4.8</span>
+          </div>
+          <span class="therapist-spec">Anxiety &amp; Depression</span>
+          <p class="desc">Integrates mindfulness and talk therapy to help clients find steadier ground during difficult seasons.</p>
+          <div class="therapist-meta"><span>🕓 50 min</span><span>💻 Online</span><span>🗣️ English, Spanish</span></div>
+          <button class="book-btn" data-name="Dr. Elena Garcia">Book a Session</button>
+        </div>
+      </article>
+
+      <article class="therapist-card" data-tags="students stress">
+        <div class="therapist-photo">
+          <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=500&q=80" alt="Portrait of Dr. Ravi Thapa" />
+        </div>
+        <div class="therapist-body">
+          <div class="therapist-name-row">
+            <h3>Dr. Ravi Thapa</h3>
+            <span class="therapist-rating">★ 4.9</span>
+          </div>
+          <span class="therapist-spec">Student Wellbeing</span>
+          <p class="desc">Focuses on academic pressure, career anxiety, and the transition into university and working life.</p>
+          <div class="therapist-meta"><span>🕓 40 min</span><span>💻 Online</span><span>🗣️ English, Nepali</span></div>
+          <button class="book-btn" data-name="Dr. Ravi Thapa">Book a Session</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="container">
+      <div class="cta-banner">
+        <div>
+          <h2>Not sure who's right for you?</h2>
+          <p>Tell us about your situation on the home page and we'll point you in the right direction.</p>
+        </div>
+        <a href="/website/html/home.html"><button class="btn-coral">Tell Us Your Story</button></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="/website/html/home.html" class="logo">he<span class="cap-a">A</span>lth</a>
+        <p>A safe, supportive space for students and people everywhere to face mental health challenges and come out stronger.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="/website/html/home.html">Home</a></li>
+          <li><a href="/website/html/therapist.html">List of Therapists</a></li>
+          <li><a href="/website/html/about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="/website/html/about.html">Client Reviews</a></li>
+          <li><a href="/website/html/therapist.html">Book a Session</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col footer-contact">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><span class="ic">📞</span><span>989728278 / 9823728382</span></li>
+          <li><span class="ic">✉️</span><span>xyz@gmail.com</span></li>
+          <li><span class="ic">📍</span><span>14 Willowbrook Lane, Lakeview District, Kathmandu</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 heAlth. All rights reserved.</span>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">📷</a>
+        <a href="#" aria-label="Facebook">📘</a>
+        <a href="#" aria-label="Twitter">🐦</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast"></div>
+<script src="/website/javascript/style.js"></script>
+</body>
+</html>
