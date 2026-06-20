@@ -20,8 +20,8 @@ staticfiles/
 static_collected/
 
 # Environment variables — never commit secrets
-.env
-.env.*
+*.env
+*.env.*
 !.env.example
 
 # ─── Node / React ─────────────────────────────────────────────────────────────

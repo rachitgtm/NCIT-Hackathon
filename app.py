@@ -1,6 +1,7 @@
 import streamlit as st
 from characters import CHARACTERS
 from model_chat import Character
+from sentiment_engine import SentimentAnalysis
 
 st.set_page_config(page_title="Mindspace", page_icon="✶", layout="wide")
 
@@ -104,6 +105,13 @@ if "display_history" not in st.session_state:
     st.session_state.display_history = {}  # per-character list of {role, content} for rendering
 
 
+@st.cache_resource
+def get_sentiment_engine():
+    """Load the sentiment model once per app process, not once per session —
+    it's heavy, and every session re-loading it would be wasteful."""
+    return SentimentAnalysis()
+
+
 def get_character_instance(char_id):
     """Lazily create and cache a Character() per id so its .history persists
     across reruns within the session."""
@@ -160,6 +168,7 @@ def render_character_select():
 def render_chat(char_id):
     char_data = CHARACTERS[char_id]
     character = get_character_instance(char_id)
+    sentiment = get_sentiment_engine()
 
     header_col1, header_col2 = st.columns([1, 8])
     with header_col1:
@@ -182,6 +191,13 @@ def render_chat(char_id):
         history.append({"role": "user", "content": user_input})
         with st.chat_message("user"):
             st.markdown(user_input)
+
+        # Track sentiment for this message. This never blocks or fails the
+        # chat reply — a logging issue shouldn't break the conversation.
+        try:
+            sentiment.polarity_scores(user_input, character_id=char_id)
+        except Exception as e:
+            st.caption(f"(sentiment logging skipped: {e})")
 
         with st.chat_message("assistant"):
             try:
