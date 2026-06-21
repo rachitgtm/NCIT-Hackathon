@@ -2,22 +2,25 @@
   "topCompanionIds": ["miku", "gojo", "luffy"],
   "sliderSlides": [
     {
-      "type": "model",
-      "label": "Model",
-      "title": "Llama 3 — conversational companion",
-      "description": "Warm, natural dialogue tuned for emotional support and everyday check-ins."
+      "type": "image",
+      "label": "Study",
+      "title": "Focused study sessions",
+      "description": "Tailored practice and step-by-step explanations to help you learn effectively.",
+      "image": "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80"
     },
     {
-      "type": "model",
-      "label": "Model",
-      "title": "Mistral — fast & focused replies",
-      "description": "Quick, clear responses when you want practical guidance without the wait."
+      "type": "image",
+      "label": "Study",
+      "title": "Exam revision made simple",
+      "description": "Quick revision plans and targeted practice for the topics that matter most.",
+      "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=1400&q=80"
     },
     {
-      "type": "model",
-      "label": "Model",
-      "title": "Phi-3 — lightweight study partner",
-      "description": "Efficient tutoring across subjects with concise explanations and minimal errors."
+      "type": "image",
+      "label": "Study",
+      "title": "Personalized practice",
+      "description": "Adaptive exercises and helpful explanations — practice, get feedback, improve.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1400&q=80"
     },
     {
       "type": "value",

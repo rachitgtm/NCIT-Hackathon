@@ -32,12 +32,22 @@ function LandingSlider() {
   return (
     <section className="landing-slider" aria-label="Models and core values">
       <div className="landing-slider__track">
-        <div className="landing-slider__slide" key={active}>
-          <span className={`landing-slider__badge landing-slider__badge--${slide.type}`}>
-            {slide.label}
-          </span>
-          <p className="landing-slider__title">{slide.title}</p>
-          <p className="landing-slider__desc">{slide.description}</p>
+        <div
+          className="landing-slider__slide"
+          key={active}
+          style={
+            slide.image
+              ? { backgroundImage: `url('${slide.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' }
+              : undefined
+          }
+        >
+          <div className="landing-slider__overlay">
+            <span className={`landing-slider__badge landing-slider__badge--${slide.type}`}>
+              {slide.label}
+            </span>
+            <p className="landing-slider__title">{slide.title}</p>
+            <p className="landing-slider__desc">{slide.description}</p>
+          </div>
         </div>
       </div>
       <div className="landing-slider__dots" role="tablist" aria-label="Slide navigation">

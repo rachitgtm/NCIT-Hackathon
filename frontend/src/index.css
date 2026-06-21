@@ -1,35 +1,31 @@
 :root {
-  /* Color Hunt palette — https://colorhunt.co/palette/e3fdfdcbf1f5a6e3e971c9ce */
-  --palette-100: #e3fdfd;
-  --palette-200: #cbf1f5;
-  --palette-300: #a6e3e9;
-  --palette-400: #71c9ce;
+  /* Custom brand palette */
+  --primary: #6B8F71; /* Forest Sage */
+  --secondary: #DDE8D5; /* Pale Green */
+  --accent: #D6C5A4; /* Sand */
+  --bg: #FAFAF5; /* Warm White */
+  --text: #3D4A3F; /* Deep Olive */
 
-  /* Core palette */
-  --primary: #71c9ce;
-  --secondary: #a6e3e9;
-  --accent: #cbf1f5;
-  --bg: #e3fdfd;
-  --text: #334155;
+  /* darker background for character selection */
+  --bg-char: #efece6;
 
   /* Extended palette */
   --white: #ffffff;
-  --dark-gray: #1e293b;
-  --primary-hover: #5eb5ba;
-  --secondary-light: rgba(166, 227, 233, 0.35);
-  --accent-light: rgba(203, 241, 245, 0.55);
-  --primary-light: rgba(113, 201, 206, 0.18);
+  --dark-gray: rgba(0,0,0,0.7);
+  --primary-hover: #5c7f60;
+  --secondary-light: rgba(221, 232, 213, 0.35);
+  --accent-light: rgba(214, 197, 164, 0.45);
+  --primary-light: rgba(107, 143, 113, 0.12);
 
   /* Semantic tokens */
   --surface: var(--white);
-  --surface-raised: var(--palette-200);
+  --surface-raised: var(--bg);
   --surface-soft: var(--secondary-light);
-  --border: rgba(51, 65, 85, 0.1);
+  --border: rgba(61, 74, 63, 0.12);
   --border-hover: var(--primary);
-  --text-muted: rgba(51, 65, 85, 0.68);
-  --text-faint: rgba(51, 65, 85, 0.45);
-  --accent-dim: rgba(113, 201, 206, 0.2);
-  --accent-green-dim: rgba(166, 227, 233, 0.3);
+  --text-muted: rgba(61, 74, 63, 0.68);
+  --text-faint: rgba(61, 74, 63, 0.45);
+  --accent-dim: rgba(214, 197, 164, 0.18);
   --negative: #e07a5f;
   --positive: var(--primary);
 

@@ -34,4 +34,29 @@ export const CHARACTER_ART = {
     avatar:
       'https://www.slashfilm.com/img/gallery/dragon-ball-how-old-is-goku-in-every-anime-series/l-intro-1751318952.jpg',
   },
+  lebron_james: {
+    tagline: 'Experienced leader — steady guidance and motivation.',
+    image: 'https://images.unsplash.com/photo-1518599807931-7c0f3c2a7f3c?auto=format&fit=crop&w=1350&q=80',
+    avatar: 'https://images.unsplash.com/photo-1518599807931-7c0f3c2a7f3c?auto=format&fit=crop&w=400&q=80',
+  },
+  balen_shah: {
+    tagline: 'Practical, results-oriented mentorship.',
+    image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1350&q=80',
+    avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=400&q=80',
+  },
+  kendrick_lamar: {
+    tagline: 'Reflective, insightful, encourages self-awareness.',
+    image: 'https://images.unsplash.com/photo-1524504388940-8d3e7b8f4d9a?auto=format&fit=crop&w=1350&q=80',
+    avatar: 'https://images.unsplash.com/photo-1524504388940-8d3e7b8f4d9a?auto=format&fit=crop&w=400&q=80',
+  },
+  ishowspeed: {
+    tagline: 'High-energy coach who keeps you moving.',
+    image: 'https://images.unsplash.com/photo-1519340333755-93e9f1e7b0a6?auto=format&fit=crop&w=1350&q=80',
+    avatar: 'https://images.unsplash.com/photo-1519340333755-93e9f1e7b0a6?auto=format&fit=crop&w=400&q=80',
+  },
+  michael_jackson: {
+    tagline: 'Poised, reassuring, and emotionally warm.',
+    image: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=1350&q=80',
+    avatar: 'https://images.unsplash.com/photo-1527980965255-d3b416303d12?auto=format&fit=crop&w=400&q=80',
+  },
 }
