@@ -1,10 +1,11 @@
 :root {
   /* Custom brand palette (darker variants) */
-  --primary: #587658; /* darker Forest Sage */
+  --primary: #D6C5A4; /* Sand as main accent (remove green from buttons) */
   --secondary: #c9d8c6; /* slightly darker Pale Green */
-  --accent: #c0af96; /* slightly darker Sand */
+  --accent: #D6C5A4; /* Sand */
   --bg: #f6f6f1; /* Warm White (slightly dim) */
   --text: #333e34; /* Darker Deep Olive */
+  --primary-hover: #bfa887; /* darker sand for hover */
 
   /* darker background for character selection */
   --bg-char: #e6e3db; /* darker char bg */
@@ -70,7 +71,7 @@ h6 {
 }
 
 a {
-  color: var(--primary);
+  color: var(--text);
   text-decoration: none;
 }
 

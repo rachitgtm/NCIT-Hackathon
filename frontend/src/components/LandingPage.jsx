@@ -49,15 +49,8 @@ function LandingSlider() {
                 style={slide.image ? { backgroundImage: `url('${slide.image}')`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}
               />
 
-              <div className="landing-slide__body">
-                <div className="landing-slider__overlay">
-                  <span className={`landing-slider__badge landing-slider__badge--${slide.type}`}>
-                    {slide.label}
-                  </span>
-                  <h3 className="landing-slider__title">{slide.title}</h3>
-                  <p className="landing-slider__desc">{slide.description}</p>
-                </div>
-              </div>
+              {/* Removed text box: show image-only slides */}
+
             </div>
           ))}
         </div>

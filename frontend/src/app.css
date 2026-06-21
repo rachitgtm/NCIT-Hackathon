@@ -12,7 +12,7 @@
   font-weight: 600;
   font-size: 0.85rem;
   letter-spacing: 0.08em;
-  color: var(--secondary);
+  color: var(--text-muted);
   text-transform: uppercase;
   margin: 0 0 8px;
 }
@@ -35,9 +35,9 @@
   box-shadow: var(--shadow-card);
 }
 .btn-pill:hover:not(:disabled) {
-  border-color: var(--primary);
-  color: var(--primary);
-  background: var(--primary-light);
+  border-color: var(--accent);
+  color: var(--text);
+  background: var(--accent-light);
   text-decoration: none;
 }
 .btn-pill:disabled {
@@ -45,8 +45,8 @@
   cursor: not-allowed;
 }
 .btn-pill--accent {
-  background: var(--primary);
-  border-color: var(--primary);
+  background: var(--accent);
+  border-color: var(--accent);
   color: var(--white);
 }
 .btn-pill--accent:hover:not(:disabled) {
@@ -67,7 +67,7 @@
   height: 18px;
   border-radius: 50%;
   border: 2px solid var(--secondary);
-  border-top-color: var(--primary);
+  border-top-color: var(--accent);
   animation: spin 0.8s linear infinite;
 }
 @keyframes spin {
@@ -428,24 +428,16 @@
   box-sizing: border-box;
 }
 .landing-slide__media {
-  flex: 0 0 48%;
+  flex: 1 1 100%;
   height: 100%;
   border-radius: 12px;
   background-size: cover;
   background-position: center;
   box-shadow: var(--shadow-soft);
 }
-.landing-slide__body {
-  flex: 1 1 52%;
-  display: flex;
-  align-items: center;
-}
+/* landing-slide__body removed — slides are image-only now */
 .landing-slider__overlay {
-  background: linear-gradient(180deg, rgba(0,0,0,0.18), rgba(0,0,0,0.28));
-  padding: 24px;
-  border-radius: 8px;
-  color: var(--white);
-  max-width: 640px;
+  display: none; /* overlay removed; keep class in case referenced elsewhere */
 }
 .landing-slider__badge {
   display: inline-block;
