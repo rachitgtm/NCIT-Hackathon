@@ -1,31 +1,31 @@
 :root {
-  /* Custom brand palette */
-  --primary: #6B8F71; /* Forest Sage */
-  --secondary: #DDE8D5; /* Pale Green */
-  --accent: #D6C5A4; /* Sand */
-  --bg: #FAFAF5; /* Warm White */
-  --text: #3D4A3F; /* Deep Olive */
+  /* Custom brand palette (darker variants) */
+  --primary: #587658; /* darker Forest Sage */
+  --secondary: #c9d8c6; /* slightly darker Pale Green */
+  --accent: #c0af96; /* slightly darker Sand */
+  --bg: #f6f6f1; /* Warm White (slightly dim) */
+  --text: #333e34; /* Darker Deep Olive */
 
   /* darker background for character selection */
-  --bg-char: #efece6;
+  --bg-char: #e6e3db; /* darker char bg */
 
   /* Extended palette */
   --white: #ffffff;
-  --dark-gray: rgba(0,0,0,0.7);
-  --primary-hover: #5c7f60;
-  --secondary-light: rgba(221, 232, 213, 0.35);
-  --accent-light: rgba(214, 197, 164, 0.45);
-  --primary-light: rgba(107, 143, 113, 0.12);
+  --dark-gray: rgba(0,0,0,0.78);
+  --primary-hover: #4f6b55;
+  --secondary-light: rgba(201, 216, 198, 0.36);
+  --accent-light: rgba(192, 175, 150, 0.5);
+  --primary-light: rgba(88, 118, 88, 0.14);
 
   /* Semantic tokens */
   --surface: var(--white);
   --surface-raised: var(--bg);
   --surface-soft: var(--secondary-light);
-  --border: rgba(61, 74, 63, 0.12);
+  --border: rgba(51, 64, 51, 0.14);
   --border-hover: var(--primary);
-  --text-muted: rgba(61, 74, 63, 0.68);
-  --text-faint: rgba(61, 74, 63, 0.45);
-  --accent-dim: rgba(214, 197, 164, 0.18);
+  --text-muted: rgba(51, 64, 51, 0.72);
+  --text-faint: rgba(51, 64, 51, 0.48);
+  --accent-dim: rgba(192, 175, 150, 0.22);
   --negative: #e07a5f;
   --positive: var(--primary);
 
